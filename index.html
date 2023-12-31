@@ -4,19 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-<header>
+    <header>
 
-</header>
-<main>
+    </header>
+    <main>
 
-</main>
-<footer>
+        <div class="flex flex-col lg:flex-row mt-6">
+            <div class="flex-1 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-6"   >
+                  </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title ">Triangle</h2>
+                      <p>Area (A) = 0.5 X b X h
+                        </p>
+                        <p class="">
+                           <input type="text" class="border w-24 px-2 " placeholder="b" id="base-area">
+                           <span class="ml-2">cm</span>
+                        </p>
+                        <p class="">
+                            <input type="text" class="  w-24 px-2 " placeholder="h" id="hight-area">
+                            <span class="ml-2">cm</span>
+                         </p>
 
-</footer>
+                         <p>
+                            Area: <span id="area">0</span>cm <sup>2</sup>
+                            
+                         </p>
+                       
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="areaCalculate()">Calculate</button>
+                      </div>
+                    </div>
 
+                  </div>
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title  ">Rectangle</h2>
+                      <p>Area (A) = w X l
+                        </p>
+                        <p class="">
+                           <input type="text" class="border w-24 px-2 " placeholder="w" id="width-area">
+                           <span class="ml-2">cm</span>
+                        </p>
+                        <p class="">
+                            <input type="text" class="  w-24 px-2 " placeholder="l" id="langth-area">
+                            <span class="ml-2">cm</span>
+                         </p>
+
+                         <p>
+                            Area: <span id="area-rectangle">0</span>cm <sup>2</sup>
+                            
+                         </p>
+                       
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="areaCalculate()">Calculate</button>
+                      </div>
+                    </div>
+
+
+            </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title ">Parallelogram</h2>
+                      <p>Area (A) = b X h
+                        </p>
+                        <p class="">
+                           <input type="text" class="border w-24 px-2 " placeholder="b" id="area-base">
+                           <span class="ml-2">cm</span>
+                        </p>
+                        <p class="">
+                            <input type="text" class="  w-24 px-2 " placeholder="h" id="area-hight">
+                            <span class="ml-2">cm</span>
+                         </p>
+
+                         <p>
+                            Area: <span id="area-parallelogtam">0</span>cm <sup>2</sup>
+                            
+                         </p>
+                       
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="areaCalculate()">Calculate</button>
+                      </div>
+                    </div>
+
+
+            </div>
+
+            <div class="w[400px]">
+                <div class="text-4xl">
+                    Area Calculation
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+   <script src="js/area-calculate.js"></script>
     
 </body>
 </html>
